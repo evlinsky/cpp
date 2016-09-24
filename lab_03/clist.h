@@ -7,7 +7,7 @@ struct intrusive_list {
   struct intrusive_node* head;
 };
 
-/* ? */ init_list(intrusive_list /* ? */, intrusive_node /* ? */);
+/* ? */ init_list(intrusive_list /* ? */);
 /* ? */ add_node(intrusive_list /* ? */, intrusive_node /* ? */);
 /* ? */ remove_node(intrusive_list /* ? */, intrusive_node /* ? */);
 

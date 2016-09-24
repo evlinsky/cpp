@@ -22,12 +22,15 @@ item = container_of(ptr, position_node, node);
 * rm <x> <y> -- удалить все точки (x, y);
 * print -- печать в терминале всех точек, которые хранятся в данный момент, в скобках через пробел. Вывод заканчивается переводом строки;
 * rma -- удаление всех точек
+* len -- печать количества хранимых точек
 * если вводится любая другая команда -- печать сообщения "Unknown command"
 
 = Пример =
 add 1 2[Enter]
 add 3 6[Enter]
 add 4 6[Enter]
+len[Enter]
+3
 add 1 2[Enter]
 print[Enter]
 (1 2) (4 6) (3 6) (1 2)
@@ -39,6 +42,8 @@ print[Enter]
 rma[Enter]
 print[Enter]
 <empty line>
+len[Enter]
+0
 add 2 -4[Enter]
 print[Enter]
 (2 -4)
