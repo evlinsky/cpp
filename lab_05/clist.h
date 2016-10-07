@@ -1,13 +1,14 @@
 #ifndef _CLIST_12112014_
 #define _CLIST_12112014_
 
-struct intrusive_node {
-    intrusive_node *next;
-    intrusive_node *prev;
-};
-struct intrusive_list {
+typedef struct intrusive_node {
+    struct intrusive_node *next;
+    struct intrusive_node *prev;
+} intrusive_node;
+
+typedef struct intrusive_list {
     intrusive_node head;
-};
+} intrusive_list;
 
 void init_list(intrusive_list *);
 

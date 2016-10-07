@@ -3,14 +3,11 @@
 
 #include "clist.h"
 
-struct position_node {
+typedef struct position_node {
     int x;
     int y;
     intrusive_node node;
-
-    position_node(int x, int y) : x(x), y(y) {
-    }
-};
+} position_node;
 
 void remove_position(intrusive_list *list, int x, int y);
 

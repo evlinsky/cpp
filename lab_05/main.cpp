@@ -1,8 +1,4 @@
-#include <iostream>
 #include "position.h"
-
-using std::cout;
-using std::endl;
 
 int main() {
     intrusive_list list;
