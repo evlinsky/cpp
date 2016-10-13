@@ -56,7 +56,7 @@ Hint: один из параметров op  может использовать
 > ./main loadtext test print "[%d, %d] "
 [1, 1] [2, 2] [3, 3] 
 > ./main loadtext test savebin out_bin
-> hexdump out_bin
+> hd out_bin
 0000000 01 00 00 01 00 00 02 00 00 02 00 00 03 00 00 03
 0000010 00 00
 0000012
