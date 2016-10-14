@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phonebook>
+    <human name="Petr Petrovich Petrov">
+        <phone>7654321</phone>
+        <phone>9051234567</phone>
+    </human>
+    <human name="Ivan Ivanonich Ivanov">
+        <phone>1234567</phone>
+        <phone>9211234567</phone>
+        <phone>9111234567</phone>
+    </human>
+</phonebook>
