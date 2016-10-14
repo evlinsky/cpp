@@ -1,4 +1,4 @@
-0. Для выполнения задания потребуется библиотека для парсинга XML -- SAX Parser "Expat".
+0. Для выполнения задания потребуется библиотека для парсинга XML -- SAX Parser "Expat" (http://expat.sourceforge.net)
 sudo apt-get install libexpat-dev
 Также рекомендуется поставить утилиты для работы с xml.
 sudo apt-get install libxml2-utils
