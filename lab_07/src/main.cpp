@@ -30,12 +30,12 @@ int main(int argc, char **argv) {
   MyVector v;
   Cmd cmd;
 
-#define CMD_ARGS_CHECK(CMD_NAME, ARGS_NM)			\
-  if (cmd.arg_nm != ARGS_NM) {					\
-    printf(#CMD_NAME" must take "#ARGS_NM" args.\n");		\
-    continue;					                \
+#define CMD_ARGS_CHECK(CMD_NAME, ARGS_NM)                 \
+  if (cmd.arg_nm != ARGS_NM) {                            \
+    printf(#CMD_NAME" must take "#ARGS_NM" args.\n");     \
+    continue;                                             \
   }
-  
+
   while (1) {
     printf("> ");
     assert(fgets(buff, sizeof(buff), stdin));
@@ -45,7 +45,7 @@ int main(int argc, char **argv) {
       CMD_ARGS_CHECK(Info, 0);
       printf("SZ: %zu; CAP: %zu;\n", v.size(), v.capacity());
       for (size_t i = 0; i < v.size(); ++i) {
-	printf("%d ", v.get(i));
+        printf("%d ", v.get(i));
       }
       printf("\n");
     } else if (!strcmp(cmd.name, "set")) {
