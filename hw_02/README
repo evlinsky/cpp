@@ -160,23 +160,23 @@ DO_CHECK(EXPR) → check(EXPR, __FUNC__, __FILE__, __LINE__);
 class BoardTest: public Test {
 public:
     void testIsWin() {
-        Model m;
-        m.move(0, 0, 1);
-        m.move(0, 1, 1);
-        m.move(1, 0, 1);
-        m.move(4, 5, 0);
-        m.move(5, 5, 0);
-        DO_CHECK(m.IsWin() == GAME_IN_PROGRESS);
+        Board b;
+        b.move(0, 0, 1);
+        b.move(0, 1, 1);
+        b.move(1, 0, 1);
+        b.move(4, 5, 0);
+        b.move(5, 5, 0);
+        DO_CHECK(b.IsWin() == GAME_IN_PROGRESS);
 }
     void testMove1() {
-        Model m;
-        m.move(0, 0, 1);
-        DO_CHECK(m.canMove(0, 0, 0) == false);
+        Board b;
+        b.move(0, 0, 1);
+        DO_CHECK(b.canMove(0, 0, 0) == false);
     }
     void testMove2() {
-        Model m;
+        Board b;
         m.move(0, 0, 1);
-        DO_CHECK(m.canMove(1, 1, 1) == true);
+        DO_CHECK(b.canMove(1, 1, 1) == true);
     }
 
 
