@@ -211,7 +211,7 @@ int main() {
 Файлы тестов: BoardTest.{h, cpp}, Test.{h, cpp}, test.cpp.
 Цели в Makefile
 all (собирает исполняемый файл main (игра) на основе main.cpp и других файлов)
-board_test (cобирает исполняемый файл test (тесты игры) на основе test.cpp и других файлов)
+test (cобирает исполняемый файл board_test (тесты игры) на основе test.cpp и других файлов)
 clean
 
 
