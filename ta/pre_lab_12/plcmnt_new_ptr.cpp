@@ -18,7 +18,7 @@ std::ostream& operator<<(std::ostream &s, const BigDmInteger &bi) {
 }
 
 void enjoy_free_memory(void *bi_mem) {
-  // "free" means "you don't need to manage it"
+  // "free" means "you don't have to manage it"
 
   BigDmInteger *bdmi = new (bi_mem) BigDmInteger{42};
   std::cout << *bdmi << std::endl;
