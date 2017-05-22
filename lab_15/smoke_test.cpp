@@ -59,7 +59,7 @@ void example4() {
   std::ostream_iterator<double> out(oss, "\n");
 
   from(in, eof)    // Взять числа из входного потока
-  .select([](int x) { return sqrt(x); })  // Извлечь из каждого корень
+  .select([](int x) { return static_cast<int>(sqrt(x) + 1e-6); })  // Извлечь из каждого корень
   .copy_to(out);  // Вывести на экран
   
   assert(oss.str() == "2\n4\n");
