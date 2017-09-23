@@ -7,7 +7,7 @@ struct position_node {
 
 }
 
-/* ? */ add_positon(intrusive_list /* ? */, int x, int y) {
+/* ? */ add_position(intrusive_list /* ? */, int x, int y) {
 
 }
 
@@ -25,8 +25,8 @@ int main() {
      intrusive_list_t l;
      init_list(&l);
 
-     add_positon(&l, 10, 10);
-     add_positon(&l, 20, 20);
+     add_position(&l, 10, 10);
+     add_position(&l, 20, 20);
 
      show_all_positions(&l);
 
