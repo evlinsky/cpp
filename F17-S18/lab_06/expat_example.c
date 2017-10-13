@@ -47,7 +47,9 @@ int parse_xml(char *buff, size_t buff_size) {
 
         if (XML_Parse(parser, buff, len, done) == XML_STATUS_ERROR) {
             printf("Error: %s\n", XML_ErrorString(XML_GetErrorCode(parser)));
+
             XML_ParserFree(parser);
+            fclose(fp);
             return 2;
         }
     } while (!done);
