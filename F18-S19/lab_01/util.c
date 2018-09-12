@@ -1,3 +1,0 @@
-? max(?) {
-  logDebug('m');
-}
