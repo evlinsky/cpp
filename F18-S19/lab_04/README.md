@@ -2,7 +2,7 @@
 
 1. Реализовать алгоритм *merge sort*, способный работать с данными разных типов (`mergesort.c`).
     ```c
-    int mergesort(void* base, size_t num, size_t size, int (*compar)(const void*,const void*));
+    void mergesort(void* base, size_t num, size_t size, int (*compar)(const void*,const void*));
     ```
     * `base` — указатель на данные (массив, который надо отсортировать);
     * `num` — количество элементов;
