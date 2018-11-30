@@ -16,8 +16,7 @@ int main() {
     Figure* found = scheme.is_inside_figure(5, 5);
     if (found != 0) {
         found->print();
-    }
-    else {
+    } else {
         printf("not found\n");
     }
 
