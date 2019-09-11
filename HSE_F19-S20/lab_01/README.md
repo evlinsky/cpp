@@ -19,7 +19,7 @@
 1. Скопируйте файлы из `correct/` в папки `unresolved/` и `multiple/` и минимальными
    изменениями кода добейтесь того, чтобы в них стали возникать следующие ошибки линковки,
    соответственно:
-    * «unresolved symbol»,
+    * «undefined reference» или «unresolved symbol»,
     * «multiple definition».
 
 ## Требования к корректности решения
