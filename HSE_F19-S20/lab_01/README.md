@@ -55,11 +55,11 @@
   цели `bin`, причём зависимость должна быть не обычная (normal), а order-only
   (см. [документацию](https://www.gnu.org/software/make/manual/html_node/Prerequisite-Types.html)), например:
   ```
-  bin/main.o: src/main.o | bin
+  bin/main.o: src/main.c | bin
   ```
   вместо
   ```
-  bin/main.o: bin src/main.o
+  bin/main.o: bin src/main.c
   ```
   Это нужно, чтобы не появлялось правила "если папка `bin` изменилась позже создания `bin/main.o`,
   перегенерируй `bin/main.o`", как было бы с обычными зависимостями.
