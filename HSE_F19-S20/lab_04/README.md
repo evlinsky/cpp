@@ -85,7 +85,7 @@ void mergesort(void *array, size_t elements, size_t element_size, int (*comparat
 ```
 // int greater than comparator
 int int_gt_comparator(const void *a, const void *b) {
-    return *(int*)b - *(int*)a;  // Сортировка массива по возрастанию.
+    return *(int*)b - *(int*)a;  // Сортировка массива по убыванию.
 }
 // ...
 int data[] = { 3, 1, 2 };
