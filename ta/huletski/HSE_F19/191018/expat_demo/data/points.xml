@@ -1,0 +1,12 @@
+<line>
+  <point color="blue">
+    <x>1</x>
+    <y>2</y>
+  </point>
+  <point>
+    <x>3</x>
+    <y>4</y>
+    You are here.
+  </point>
+  <point/>
+</line>

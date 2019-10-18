@@ -1,6 +1,6 @@
 .PHONY: all clean
 
-#DBG_FLAGS=-fsanitize=address
+DBG_FLAGS=-fsanitize=address
 EXEC=demo
 
 all: $(EXEC)
