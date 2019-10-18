@@ -81,7 +81,7 @@ void read_text(const char *fname) {
     printf("%s|\n", str);
     printf("------------\n");
   }
-  perror("On getf end");
+  perror("On fgets end");
   fclose(fgets_stm);
 
   free(buf);
@@ -129,6 +129,7 @@ void read_binary(const char *fname) {
     if (read_nm != len) {
       if (ferror(in_stm)) {
         perror("On fread fail");
+        break;
       }
       assert(0 && "Unexpected file format");
     }
@@ -156,6 +157,7 @@ void write_binary(const char *fname, int nm, char **cstrs) {
     written_nm = fwrite(cstrs[i], sizeof(*cstrs[i]), len, out_stm);
     if (written_nm != len || ferror(out_stm)) {
       perror("Bin: on data write");
+      break;
     }
   }
 
