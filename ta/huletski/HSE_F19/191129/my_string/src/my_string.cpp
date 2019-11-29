@@ -23,7 +23,7 @@ my_string::my_string(const my_string &that)
 }
 
 my_string& my_string::operator=(my_string that) {
-  my_string(that).swap(*this);
+  that.swap(*this);
   return *this;
 }
 
@@ -42,7 +42,7 @@ const char& my_string::operator[](std::size_t i) const {
 
 char& my_string::operator[](std::size_t i) {
   //return const_cast<char &>(static_cast<const my_string &>(*this)[i]);
-  return (char &)(((const my_string&)(*this))[i]);
+  return (char &)(((const my_string&)*this)[i]);
 }
 
 bool operator==(const my_string &lhs, const my_string &rhs) {
