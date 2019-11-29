@@ -2,7 +2,7 @@ CXX = g++
 CXXFLAGS = -O2 -Wall -Werror -std=c++11 -Iinclude
 LDFLAGS = 
 
-EXE = lab_08
+EXE = lab_09
 SRCDIR = src
 BINDIR = bin
 
