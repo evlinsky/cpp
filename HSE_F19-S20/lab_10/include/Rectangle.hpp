@@ -1,4 +1,4 @@
-#include "figure.h"
+#include "Figure.hpp"
 
 class Rectangle : public Figure {
 public:

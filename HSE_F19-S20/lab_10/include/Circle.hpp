@@ -1,6 +1,6 @@
 #pragma once
 
-#include "figure.h"
+#include "Figure.hpp"
 
 class Circle : public Figure {
 public:

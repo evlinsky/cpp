@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-#include "scheme.h"
-#include "rectangle.h"
-#include "circle.h"
+#include "Scheme.hpp"
+#include "Rectangle.hpp"
+#include "Circle.hpp"
 
 
 int main() {

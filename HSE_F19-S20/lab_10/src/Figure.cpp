@@ -1,3 +1,3 @@
-#include "figure.h"
+#include "Figure.hpp"
 
 // TODO
