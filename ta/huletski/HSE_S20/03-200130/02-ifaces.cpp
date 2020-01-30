@@ -25,10 +25,10 @@ void show_all(const Displayables& objs) {
   std::cout << "\n";
 }
 
-using physicalwoldobjects = std::vector<physicalobject*>;
+using PhysicalWoldObjects = std::vector<PhysicalObject*>;
 
-void update_world(const physicalwoldobjects& objs) {
-  for (physicalobject *po : objs) {
+void update_world(const PhysicalWoldObjects& objs) {
+  for (PhysicalObject *po : objs) {
     po->update_pos();
     // po->show() // unknown method
   }
@@ -36,8 +36,8 @@ void update_world(const physicalwoldobjects& objs) {
 
 //// framework extension
 
-struct person : physicalobject, displayable {
-  person(const std::string &name, int x, int y)
+struct Person : PhysicalObject, Displayable {
+  Person(const std::string &name, int x, int y)
     : x_{x}, y_{y}, name_{name} {}
   void update_pos() override {
     x_++;
@@ -52,7 +52,7 @@ private:
 };
 
 int main(int, char **) {
-  displayables d;
+  Displayables d;
   PhysicalWoldObjects pwo;
 
   Person joe("Joe", 2, 1), bob("Bob", 0, 0);
