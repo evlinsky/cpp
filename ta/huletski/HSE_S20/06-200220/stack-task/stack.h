@@ -50,9 +50,9 @@ private:
     
     void swap(ElemsStorage &other);
     void destroy(T* beg, std::size_t nm);
-    void copy(T* out_beg, const T* in_beg, std::size_t in_nm);
+    void uninitialized_copy(T* out_beg, const T* in_beg, std::size_t in_nm);
     void append(const T* in_beg, std::size_t in_nm) {
-      return copy(data() + nm(), in_beg, in_nm);
+      return uninitialized_copy(data() + nm(), in_beg, in_nm);
     }
     bool is_full() const { return cap_ == nm_; }
   private:
@@ -77,8 +77,8 @@ void Stack<T>::ElemsStorage::destroy(T* beg, std::size_t nm) {
 }
 
 template<typename T>
-void Stack<T>::ElemsStorage::copy(T* out_beg,
-                                  const T* in_beg, std::size_t in_nm) {
+void Stack<T>::ElemsStorage::uninitialized_copy(
+  T* out_beg, const T* in_beg, std::size_t in_nm) {
   // TODO:
 }
 
