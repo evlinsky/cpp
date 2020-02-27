@@ -62,7 +62,7 @@ void test_assign_move() {
 template <template <typename> typename PtrT>
 void test_unable_to_copy() {
   static_assert(!std::is_copy_constructible_v<PtrT<Int>>);
-  static_assert(!std::is_copy_assignable_v<PtrT<Int>>); 
+  static_assert(!std::is_copy_assignable_v<PtrT<Int>>);
 }
 
 template <template <typename> typename PtrT>
@@ -105,7 +105,7 @@ class is_bool_safe {
 
   template<typename U>
   struct check<U, decltype(AlwaysTrue() == U())> : std::false_type {};
-  
+
 public:
   inline static constexpr bool value = check<T>::value;
 };
