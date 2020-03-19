@@ -8,7 +8,7 @@ int main(int, char**) {
   // cin -> vector
   std::copy(std::istream_iterator<int>(std::cin),
             std::istream_iterator<int>(),
-            //vi.begin());
+            // vi.begin());
             std::back_inserter(vi));
 
   // vector -> cout
