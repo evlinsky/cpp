@@ -55,8 +55,10 @@ void test_unique(const std::vector<int> &vi) {
 int main(int, char**) {
   test_unique({});
   test_unique({1});
+  test_unique({1, 1, 1, 1});
   test_unique({1, 2, 3});
   test_unique({1, 1, 2, 3});
   test_unique({1, 2, 2, 2, 3});
   test_unique({1, 2, 3, 3, 3, 3});
+  test_unique({1, 1, 1, 2, 2, 2, 3, 3, 3});
 }
