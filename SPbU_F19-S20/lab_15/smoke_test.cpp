@@ -5,6 +5,8 @@
 #include <sstream>
 #include <iterator>
 
+using linq::from;
+
 void example1() {
   int xs[] = { 1, 2, 3, 4, 5 };
   

@@ -4,6 +4,8 @@
 #include <utility>
 #include <vector>
 
+namespace linq {
+
 template<typename T, typename Iter>
 class range_enumerator;
 template<typename T>
@@ -80,5 +82,7 @@ public:
 
 private:
 };
+
+} // namespace linq
 
 #endif

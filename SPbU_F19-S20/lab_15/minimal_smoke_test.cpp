@@ -2,6 +2,8 @@
 #include <assert.h>
 #include <vector>
 
+using linq::from;
+
 void from_to_vector() {
   std::vector<int> xs = { 1, 2, 3 };
   std::vector<int> res = from(xs.begin(), xs.end()).to_vector();
