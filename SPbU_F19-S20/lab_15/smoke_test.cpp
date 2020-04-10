@@ -9,7 +9,7 @@ using linq::from;
 
 void example1() {
   int xs[] = { 1, 2, 3, 4, 5 };
-  
+
   std::vector<int> res =
     from(xs, xs + 5)  // Взять элементы xs
     .select([](int x) { return x * x; })  // Возвести в квадрат
@@ -25,13 +25,13 @@ void example1() {
 void example2() {
   std::stringstream ss("1 2 3 -1 4");
   std::istream_iterator<int> in(ss), eof;
-  
+
   std::vector<int> res =
     from(in, eof)  // Взять числа из входного потока
     .take(4)       // Не более четырёх чисел
     .until_eq(-1)  // Перестать читать после прочтения -1
     .to_vector();  // Получить список считанных чисел
-  
+
   std::vector<int> expected = { 1, 2, 3 };
   assert(expected == res);
 
@@ -42,12 +42,12 @@ void example2() {
 
 void example3() {
   int xs[] = { 1, 2, 3, 4, 5 };
-  
+
   std::vector<double> res =
     from(xs, xs + 5)  // Взять элементы xs
     .select<double>([](int x) { return sqrt(x); })  // Извлечь корень
     .to_vector();     // Преобразовать результат в вектор
-  
+
   assert(res.size() == 5);
   for (std::size_t i = 0; i < res.size(); i++) {
     assert(fabs(res[i] - sqrt(xs[i])) < 1e-9);
@@ -63,7 +63,7 @@ void example4() {
   from(in, eof)    // Взять числа из входного потока
   .select([](int x) { return static_cast<int>(sqrt(x) + 1e-6); })  // Извлечь из каждого корень
   .copy_to(out);  // Вывести на экран
-  
+
   assert(oss.str() == "2\n4\n");
 }
 
