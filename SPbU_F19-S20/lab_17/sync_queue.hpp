@@ -82,7 +82,7 @@ namespace lab_17 {
          * After queue is shutdown, nothing can be pushed or popped,
          * and all waiting operations are aborted.
          */
-        void shutdown() noexcept;
+        void shutdown();
         /**
          * Check if queue is shutdown.
          * @return is queue shutdown.
