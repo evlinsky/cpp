@@ -14,11 +14,13 @@
 //#define TEST_FORMAT_MEMBER
 //#define TEST_FORMAT_MEMBER_SFINAE
 
+namespace {
 auto is_formattable = boost::hana::is_valid(
     [](const auto &value)
         -> std::void_t<decltype(format::make_string(value))> {
     }
 );
+}
 
 #ifdef TEST_BOOL
 TEST_CASE("bool") {
