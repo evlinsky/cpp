@@ -1,6 +1,6 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
-#include <iostream>
+#include <iostream>  // https://github.com/onqtam/doctest/issues/356
 #include <string>
 
 using namespace doctest;

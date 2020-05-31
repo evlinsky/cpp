@@ -1,5 +1,6 @@
 #include "format.hpp"
 
+#include <iostream>  // https://github.com/onqtam/doctest/issues/356
 #include <string>
 #include <vector>
 
