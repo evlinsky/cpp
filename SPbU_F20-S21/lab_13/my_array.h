@@ -1,3 +1,5 @@
+namespace lab_13 {
+
 template<typename T, std::size_t N>
 class my_array {
  public:
@@ -9,3 +11,5 @@ class my_array {
 
   fill(T val);
 };
+
+}

@@ -1,6 +1,8 @@
 #include <cstddef>
 #include "my_array.h"
 
+using lab_13::my_array;
+
 template<typename T, std::size_t N>
 void test_core() {
   my_array<T, N> a;
